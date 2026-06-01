@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <title> Web Page </title>
+
+    <body>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .navbar {
+                background-color: orangered;
+                color: white;
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 40px;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            .sidebar {
+                width: 220px;
+                background-color: #0f67b3;
+                color: white;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                padding: 20px;
+            }
+
+            .sidebar li {
+                margin-bottom: 8px;
+            }
+
+            .sidebar li:hover {
+                background-color: rgba(255,255,255,0.2);
+            }
+
+            .content {
+                flex: 1;
+                padding: 20px;
+                display: grid;
+                grid-template-columns: repeat( 3, 1fr );
+                gap: 20px;
+                background-color: #f3f3f3;
+            }
+
+            .card {
+                background: #dfe5e5;
+                padding: 20px;
+                border-radius: 6px;
+                height: 120px;
+            }
+
+            .card h3 {
+                margin-bottom: 10px;
+            }
+
+        </style>
+
+         <header id = "headerId" class = "headerClass" style = "color:transparent" href = "/">
+
+            <nav class= "navbar">
+                <div class="logo"> Company </div>
+
+                    <ul class="nav-links">
+                        <li class = "revenue"> Revenue </li>
+                        <li class = "sales"> Sales </li>
+                        <li class = "customers"> Customers </li>
+                        <li class = "reports"> Reports </li>
+                        <li class = "settings"> Settings </li>
+
+                    </ul>
+                    </nav>
+
+                </header>
+
+                    <div class = "container">
+
+                        <aside class="sidebar">
+
+                        <ul>
+                            <li> Dashboard </li>
+                            <li class = "revenue"> Revenue </li>
+                            <li class = "sales"> Sales </li>
+                            <li class = "customers"> Customers </li>
+                            <li class = "reports"> Reports </li>
+                            <li class = "meetings"> Meetings </li>
+                            <li class = "events"> Events </li>
+                            <li class = "settings"> Settings </li>
+                        </ul>
+
+                    </aside>
+
+                    <main class="content">
+
+            <div class = "card">
+
+                <h3> Revenue </h3>
+
+                    <p> Loream ipsum dolor sit  amet, consecture adipiscing elit </p>
+                </div>
+
+                <div class = "card">
+
+                    <h3> Sales </h3>
+
+                    <p> ut evismod efficitur turpis, non tincidunt nibh volutpat sed </p>
+                </div>
+
+                <div class = "card">
+
+                    <h3> Customers </h3>
+
+                    <p> Suspendise semper ipsum eget neque malesuada auctor </p>
+                </div>
+
+                <div class = "card">
+
+                    <h3> Events </h3>
+
+                    <p> Quisque eu massa a mauris ultricies dapibus. </p>
+
+                </div>
+
+                <div class = "card">
+
+                    <h3> Reports </h3>
+
+                    <p> Morbi id feugiat mauris, at tempusmi </p>
+                </div>
+
+                <div class = "card">
+
+                    <h3> Meetings </h3>
+
+                    <p> Nulla facilis vestibulum vitae eros nee lectus posuere ultricies </p>
+                </div>
+
+                </main>
+            </div>
+
+            <script src = "attributes.js"></script>
+         
+        </body>
+</html> 
